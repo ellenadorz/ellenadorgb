@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MS, fb & Whatsapp -->
+
+    <!-- MS Tile - for Microsoft apps-->
+    <meta name="msapplication-TileImage" content="img/logo.png">
+
+    <!-- fb & Whatsapp -->
+
+    <!-- Site Name, Title, and Description to be displayed -->
+    <meta property="og:site_name" content="El Leñador GameBits">
+    <meta property="og:title" content="El Leñador GameBits">
+    <meta property="og:description" content="Tarjetas virtuales y suscripciones para videojuegos, consolas y software">
+
+    <!-- Image to display -->
+    <!-- Replace   «example.com/image01.jpg» with your own -->
+    <meta property="og:image" content="img/logo.png">
+
+    <!-- No need to change anything here -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="img/logo.png">
+
+    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Website to visit when clicked in fb or WhatsApp-->
+    <meta property="og:url" content="http://www.ellenadorgb.info">
+
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Architects+Daughter|Roboto&amp;subset=latin,devanagari">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>El Leñador GameBits</title>
+</head>
+
+<body class="welcome">
+    <span id="splash-overlay" class="splash"></span>
+    <span id="welcome" class="z-depth-4"></span>
+
+    <!--<header class="navbar-fixed">
+        <nav class="row deep-purple darken-3">
+          <div class="col s12">
+            <ul class="right">
+              <li class="right">
+                <a href="" target="_blank" class="fa fa-facebook-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+              </li>
+              <li class="right">
+                <a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>-->
+
+    <main class="valign-wrapper">
+        <span class="container grey-text text-lighten-1 ">
+
+            <p class="flow-text">Bienvenido a</p>
+            <h1 class="title grey-text text-lighten-3">El Leñador GameBits</h1>
+
+            <blockquote class="flow-text">Tarjetas virtuales de regalo y suscripciones para tus videojuegos,
+                consolas y software favorito!</blockquote>
+
+            <div class="carousel center-align" style="margin-top: -80px; margin-bottom: -90px;">
+                <a class="carousel-item" href="#one!"><img src="img/fortnite.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/xboxlive.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/pnsplus.webp"></a>
+                <a class="carousel-item" href="#four!"><img src="img/steam.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/minecraft.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/xboxgame.jpg"></a>
+            </div>
+
+            <div class="center-align buttons-section">
+                <a class="waves-effect waves-light btn pink darken-1 ma-2"><i class="material-icons left">store</i>Shop
+                    Mercadopago</a>
+                <a class="waves-effect waves-light btn purple darken-3 ma-2"><i
+                        class="material-icons left">shop</i>Sitio
+                    web</a>
+                <a class="waves-effect waves-light btn orange darken-4 ma-2"><i
+                        class="material-icons left">forum</i>Forobeta</a>
+                <a class="waves-effect waves-light btn blue darken-1 ma-2"><i
+                        class="material-icons left">telegram</i>Telegram</a>
+                <a class="waves-effect waves-light btn teal darken-2 ma-2"><i
+                        class="material-icons left">whatsapp</i>WhatsApp</a>
+            </div>
+
+        </span>
+    </main>
+
+    <!-- Modal -->
+    <!--<div class="fixed-action-btn">
+        <a href="#modal1" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
+            <i class="large material-icons">message</i>
+        </a>
+    </div>
+
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div> -->
+    <!-- Fin Modal -->
+
+    <footer class="page-footer deep-purple darken-3">
+        <div class="footer-copyright deep-purple darken-4">
+            <div class="container">
+                <time datetime="{{ site.time | date: '%Y' }}">&copy; 2022 El Leñador GB</time>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    //$(document).ready(function () {
+    //    $('.modal').modal();
+    //});
+    ///////////////////
+    $(document).ready(function () {
+        $('.carousel').carousel();
+
+        //function for auto play carousel-slider
+        setInterval(function () {
+            $('.carousel').carousel('next');
+        }, 4000);
+
+    });
+</script>
+
+<script src="https://kit.fontawesome.com/1764634f69.js" crossorigin="anonymous"></script>
+</body>
