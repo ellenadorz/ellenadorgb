@@ -188,7 +188,14 @@ body {
 
     /*******fin modify***/
 
-    .ma-2 {
-      margin: 4px !important;
-    }
+    .ma-2 {margin: 4px !important;}
+
+    .mat-2 {margin-top: 4px !important;}
+    .mat-3 {margin-top: 7px !important;}
+
+    .mar-2 {margin-right: 4px !important;}
+
+    .mab-2 {margin-bottom: 4px !important;}
+
+    .mal-2 {margin-left: 4px !important;}
     
