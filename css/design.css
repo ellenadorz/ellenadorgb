@@ -56,7 +56,8 @@ body {
   /* moveIn */
   .welcome header,
   .welcome a.btn,
-  .welcome .carousel {
+  .welcome .carousel,
+  .welcome footer {
     opacity: 0;
     animation: moveIn 2s 3.1s ease forwards;
   }
