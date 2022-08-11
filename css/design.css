@@ -19,7 +19,6 @@ body {
   
   body.welcome {
     background: #512da8;
-    overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
   
@@ -56,7 +55,8 @@ body {
   /* moveIn */
   .welcome header,
   .welcome a.btn,
-  .welcome .carousel {
+  .welcome .carousel,
+  .welcome footer {
     opacity: 0;
     animation: moveIn 2s 3.1s ease forwards;
   }
@@ -191,7 +191,7 @@ body {
     .ma-2 {margin: 4px !important;}
 
     .mat-2 {margin-top: 4px !important;}
-    .mat-3 {margin-top: 7px !important;}
+    .mat-3 {margin-top: 6px !important;}
 
     .mar-2 {margin-right: 4px !important;}
 
